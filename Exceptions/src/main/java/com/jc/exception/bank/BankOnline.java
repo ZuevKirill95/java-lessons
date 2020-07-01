@@ -1,7 +1,9 @@
-package com.company;
+package com.jc.exception.bank;
+
+import com.jc.exception.exception.InvalidCardNumberException;
 
 public class BankOnline {
-    void send(String cardNumber, Double money) throws InvalidCardNumberException {
+    public void send(String cardNumber, Double money) throws InvalidCardNumberException {
         if (cardNumber.replaceAll(" ", "").length() != 16) {
             throw new InvalidCardNumberException("Карта введена неверно");
         }

@@ -1,7 +1,7 @@
-package com.company;
+package com.jc.exception.exception;
 
 public class InvalidCardNumberException extends Exception {
-    InvalidCardNumberException(String msg) {
+    public InvalidCardNumberException(String msg) {
         super(msg);
     }
 }
