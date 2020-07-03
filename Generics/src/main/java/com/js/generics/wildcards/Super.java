@@ -14,7 +14,7 @@ public class Super {
         List<Animal> animals = new ArrayList<>();
         List<Object> objects = new ArrayList<>();
 
-        List<? super Cat> catsAndUpper = objects;
+        List<?> catsAndUpper = objects;
 
         // catsAndUpper.add(new Cat());
 

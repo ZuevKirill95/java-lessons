@@ -1,5 +1,8 @@
 package com.js.generics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Forbidden<T> {
     /**
      * 1. Нельзя объявлять параметризованное поле как static.
