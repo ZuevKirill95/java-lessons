@@ -3,6 +3,9 @@ package com.js.generics.homework.resolve;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Сделайте методы типизированными (Используйте generics)
+ */
 public class UtilClass {
     /**
      * Возвращает true, если список равен null или если список пуст
@@ -16,7 +19,7 @@ public class UtilClass {
 
     /**
      * Получает последний элемент в коллекции
-     * Если список пустой, то выбрасывается исключение IllegalArgumentException
+     * Если список равен null, то выбрасывается исключение IllegalArgumentException
      *
      * @param list список
      * @return последний элемент в коллекции
