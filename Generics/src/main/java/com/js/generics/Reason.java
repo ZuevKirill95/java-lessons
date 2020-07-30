@@ -7,13 +7,9 @@ public class Reason {
     public static void main(String[] args) {
         List numbers = new ArrayList();
 
-        int num1 = 1;
-        int num2 = 2;
-        String num3 = "3";
-
-        numbers.add(num1);
-        numbers.add(num2);
-        numbers.add(num3);
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add('3');
 
         int num = (int) numbers.get(2);
     }
