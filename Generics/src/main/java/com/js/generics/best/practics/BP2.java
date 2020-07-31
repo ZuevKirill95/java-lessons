@@ -12,7 +12,8 @@ public class BP2 {
         List<String> list = null;
 
         if ("Иван".equals(name)) {
-            list = new ArrayList<>(Arrays.asList(name));
+            list = new ArrayList<>();
+            list.add(name);
         }
 
         return list;
@@ -21,6 +22,6 @@ public class BP2 {
     public static void main(String[] args) {
         List<String> student = BP2.getStudent("Василий");
 
-        String name = student.get(0);
+        boolean isEmpty = student.isEmpty();
     }
 }
