@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Exercise {
+public class Test {
     public static void main(String[] args) {
         List<String> group1 = new ArrayList<>(Arrays.asList("Анастасия", "Ксения", "Юрий"));
         List<String> group2 = new ArrayList<>(Arrays.asList("Антон", "Ксения", "Юлия"));

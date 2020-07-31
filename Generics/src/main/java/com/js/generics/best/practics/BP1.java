@@ -1,6 +1,8 @@
 package com.js.generics.best.practics;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Всегда используйте интерфейс, когда декларируете коллекцию.

@@ -1,6 +1,6 @@
 package com.js.generics;
 
-public class GenericClass<T, V> {
+public class Box<T, V> {
     private T value1;
     private V value2;
 
