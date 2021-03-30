@@ -1,15 +1,15 @@
 package com.js.generics.wildcards;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Unbound {
     public static void main(String[] args) {
-        String str = "str";
+        Integer integer = 1;
 
-        Object object = str;
+        Number number = integer;
 
-        List<String> strings = new ArrayList<>();
-        // List<Object> objects = strings;
+        List<Integer> integers = Arrays.asList(1, 2, 3);
+        // List<?> numbers = integers;
     }
 }

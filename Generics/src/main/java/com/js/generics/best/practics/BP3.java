@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Старайтесь не использовать классический цикл.
+ * Старайтесь не использовать классический цикл при работе с коллекциями.
  */
 public class BP3 {
     public static void main(String[] args) {

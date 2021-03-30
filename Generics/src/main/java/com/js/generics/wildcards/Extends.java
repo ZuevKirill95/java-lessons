@@ -16,7 +16,6 @@ public class Extends {
 
         //  Animal firstAnimal = animals.get(0);
 
-        // Не скомпилируется
-        //animals.add(new Cat());
+      //  animals.add(new Cat());
     }
 }

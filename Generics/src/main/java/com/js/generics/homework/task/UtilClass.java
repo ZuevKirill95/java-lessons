@@ -1,6 +1,5 @@
 package com.js.generics.homework.task;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,7 +54,7 @@ public class UtilClass {
     }
 
     /**
-     * Удаляет все элементы из списка list1 всех элементов, которые встречаются в списке list2
+     * Удаляет все элементы из списка list1, которые встречаются в списке list2
      * Если хотя-бы один из аргументов равен null, то выбрасываем исключение IllegalArgumentException
      * Аргументы метода не меняются
      *

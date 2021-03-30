@@ -1,23 +1,23 @@
 package com.js.generics;
 
 public class Box<T, V> {
-    private T value1;
-    private V value2;
+    private T thing1;
+    private V thing2;
 
-    public V getValue2() {
-        return value2;
+    public V getThing2() {
+        return thing2;
     }
 
-    public void setValue2(V value2) {
-        this.value2 = value2;
+    public void setThing2(V thing2) {
+        this.thing2 = thing2;
     }
 
-    public T getValue1() {
-        return value1;
+    public T getThing1() {
+        return thing1;
     }
 
-    public void setValue1(T value1) {
-        this.value1 = value1;
+    public void setThing1(T thing1) {
+        this.thing1 = thing1;
     }
 }
 
