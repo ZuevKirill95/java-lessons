@@ -1,5 +1,6 @@
 package com.js.generics.wildcards;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,7 +10,9 @@ public class Unbound {
 
         Number number = integer;
 
+        List<String> strings = new ArrayList<>();
+
         List<Integer> integers = Arrays.asList(1, 2, 3);
-        // List<?> numbers = integers;
+         List<?> numbers = integers;
     }
 }
