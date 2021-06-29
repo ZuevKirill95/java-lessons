@@ -8,21 +8,20 @@ import java.util.Arrays;
 
 public class ConsoleInput {
     public static void main(String[] args) throws IOException {
-        Console console = System.console();
+        InputStreamReader cin = new InputStreamReader(System.in);
+        BufferedReader bufferedReader = new BufferedReader(cin);
 
-        if (console == null) {
-            System.out.println("Не консоль");
-            System.exit(1);
-        }
-
-        String name = console.readLine("Введите логин: ");
+        System.out.println("Введите логин");
+        String name = bufferedReader.readLine();
 
         boolean noMatch;
         do {
-            char[] password = console.readPassword("Введите пароль: ");
-            char[] passwordAgain = console.readPassword("Введите пароль ещё раз: ");
+            System.out.println("Введите пароль");
+            String password = bufferedReader.readLine();
+            System.out.println("Введите пароль ещё раз");
+            String passwordAgain = bufferedReader.readLine();
 
-            noMatch = !Arrays.equals(password, passwordAgain);
+            noMatch = !password.equals(passwordAgain);
             if (noMatch) {
                 System.out.println("Пароли не совпадают. Попробуйте ещё раз.%n");
             }

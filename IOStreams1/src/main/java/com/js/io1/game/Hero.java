@@ -5,7 +5,6 @@ import com.js.io1.game.armor.ClothArmor;
 import com.js.io1.game.weapon.Axe;
 import com.js.io1.game.weapon.Weapon;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class Hero {
