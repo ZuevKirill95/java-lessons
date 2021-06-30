@@ -17,8 +17,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 import static java.nio.file.StandardCopyOption.ATOMIC_MOVE;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
-public class FileOperations {
+public class FilesExample {
     public static void main(String[] args) throws IOException {
+        //Метаданные
         File file = new File("IOStreams2/src/main/java/com/js/io2/file/Borodino.txt");
         file.exists();
         boolean b = !file.exists();
@@ -29,6 +30,7 @@ public class FileOperations {
         file.canWrite();
 
         Path path = Paths.get("IOStreams2/src/main/java/com/js/io2/file/Borodino.txt");
+
         Files.exists(path);
         Files.notExists(path);
         Files.isReadable(path);
@@ -49,30 +51,5 @@ public class FileOperations {
         System.out.println("isRegularFile: " + attr.isRegularFile());
         System.out.println("isSymbolicLink: " + attr.isSymbolicLink());
         System.out.println("size: " + attr.size());
-
-        String s = "String";
-        try (BufferedWriter bufferedWriter = Files.newBufferedWriter(path)) {
-            bufferedWriter.write(s, 0, s.length());
-        }
-
-        File file2 = new File("IOStreams2/src/main/odin.txt");
-        System.out.println(file2.delete());
-
-        Path path2 = Paths.get("IOStreams2/src/main/java/com/js/io2/file/Bo.txt");
-
-//        try {
-//            Files.delete(path2);
-//        } catch (NoSuchFileException x) {
-//            System.err.format("%s: такого файла или директории не существует%n", path2);
-//        } catch (DirectoryNotEmptyException x) {
-//            System.err.format("%s Директория не пустая%n", path2);
-//        } catch (IOException x) {
-//            // File permission problems are caught here.
-//            System.err.println(x);
-//        }
-
-      //  Files.copy(path, Paths.get("IOStreams2/src/main/java/com/js/io2/file/directory/borodinoCopy.txt"), REPLACE_EXISTING);
-
-        Files.move(path, Paths.get("IOStreams2/src/main/java/com/js/io2/file/directory/Borodino.txt"), ATOMIC_MOVE);
     }
 }
