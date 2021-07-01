@@ -104,7 +104,7 @@ public class UtilClass {
      * @param list2 второй список
      * @return сумма чисел.
      */
-    public static <E> double sum(List<? extends Number> list1, List<? extends Number> list2) {
+    public static double sum(List<? extends Number> list1, List<? extends Number> list2) {
         validateParams(list1, list2);
 
         double res = 0;
